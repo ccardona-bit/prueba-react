@@ -1,0 +1,48 @@
+.hero {
+  height: 90vh;
+  background-color: #fff;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.hero article {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  text-align: left;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.hero article h1 {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+.hero article h2 {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+.hero article h2 span {
+  color: turquoise;
+}
+
+.hero picture {
+  width: 50%;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    background-color: #263238;
+  }
+  .hero picture {
+    display: none;
+  }
+
+  .hero article {
+    color: snow;
+    text-align: center;
+    gap: 1rem;
+  }
+}

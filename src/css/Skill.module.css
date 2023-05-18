@@ -1,0 +1,12 @@
+.element {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.element ul {
+  display: flex;
+  gap: 1rem;
+}
+.element ul li {
+  font-weight: normal;
+}

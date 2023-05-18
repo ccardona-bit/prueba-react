@@ -1,0 +1,53 @@
+.about {
+  background-color: #263238;
+  min-height: 90vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  width: 100%;
+}
+
+.data {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: snow;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.data h2 {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 2rem;
+}
+.skills {
+  background-color: teal;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+  box-shadow: 1rem 1rem 0 -0.25rem snow;
+}
+
+.about picture {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+
+@media (max-width: 768px) {
+  .about {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .data {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  .about picture {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+}
